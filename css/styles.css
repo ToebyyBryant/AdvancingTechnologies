@@ -1,0 +1,445 @@
+/*
+    Student Name: Bruce Schulz
+	File Name: styles.css
+	Date: 10.16.24
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h3,
+aside,
+figure,
+figcaption,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*HERO IMAGE*/
+.hero-image {
+    background-image: url("../images/banner.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: (-50%, -50%);
+    color: white;
+}
+
+.hero-text h1 {
+    padding: 2%;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 75px;
+}
+
+.hero-text h3 {
+    padding: 2%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: deepskyblue;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*Style rules for mobile viewport*/
+
+
+/*Style rules to show mobile class and hide tab-desk class*/
+
+.mobile {
+    display: block;
+}
+
+.tab-desk {
+    display: none;
+}
+
+/*Style rules for header area*/
+
+.icon {
+    align-items: center;
+}
+
+.mobile h1 {
+    padding: 2%;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.mobile h3 {
+    padding: 2%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.anchorbeing {
+    display: grid;
+    align-self: center;
+}
+
+
+/* Style rules for navigation area */
+nav {
+    background-image: linear-gradient(to right, lightblue, darkblue);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: block;
+    font-size: 1.5em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+    border-top: solid;
+    border-top: 0.5px;
+    border-top: #f6eee4;
+}
+
+nav li a {
+    display: block;
+    color: #f6eee4;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-image: linear-gradient(to left, lightblue, darkblue);
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main h3 {
+    padding-top: 2%;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    width: 95%;
+}
+
+th, td{
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: deepskyblue;
+}
+
+tr:nth-child(odd){
+    background-color: lightblue;
+}
+
+/* Style rules for class and id selectors */
+.link {
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.round {
+    border-radius: 6px;
+}
+
+aside {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px darkblue;
+}
+
+.gallery {
+    border: 4px solid lightblue;
+    box-shadow: 6px 6px 10px darkblue;
+    max-width: auto;
+    margin: 2% auto;
+}
+
+figcaption {
+    padding: 2%;
+    border-top: 4px solid darkblue;
+    text-align: center;
+}
+
+#info ul {
+    margin-left: 10%;
+}
+
+#contact {
+    text-align: center;
+}
+
+.tel-link {
+    background-color: darkblue;
+    padding: 2%;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tel-link a {
+    text-decoration: none;
+    color: #f6eee4;
+    font-weight: bold;
+}
+
+.table-pictures{
+    display: none;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-image: linear-gradient(to right, darkblue, lightblue);
+    color: #f6eee4;
+    padding: 1% 0;
+}
+
+footer a {
+    color: #f6eee4;
+    text-decoration: none;
+}
+
+iframe {
+    width: 60%;
+    height: 100%;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px),
+print {
+
+    /*Show tab-desk class, hide mobile class*/
+    .tab-desk {
+        display: block;
+    }
+
+    .table-pictures{
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /*Style rules for nav area*/
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+
+    nav li a {
+        padding: 0.5em;
+    }
+
+    /*Style rule for grid class*/
+    .grid {
+        display: grid;
+        grid-template-columns: 2;
+        gap: 10px;
+    }
+
+    aside {
+        grid-column: 1 / span 2;
+    }
+
+    .video {
+        display: flexbox;
+        align-items: center;
+        border: 4px solid lightblue;
+        box-shadow: 6px 6px 10px darkblue;
+        max-width: auto;
+        margin: 2% auto;
+    }
+
+    .youtube {
+        align-self: center;
+        align-self: center;
+        column-span: 2;
+    }
+    
+    #youtube{
+        grid-column: span 2;
+    }
+
+}
+
+/*Media Query for Desktop Viewport.*/
+@media screen and (min-width: 1000px),
+print {
+
+    /*Desktop Viewport: Style rules for nav area.*/
+    nav li {
+        font-size: 1.5em;
+    }
+
+    nav li a:hover {
+        color: white;
+        background-color: #f6eee4;
+        opacity: 0.5;
+    }
+
+    /*Desktop Viewport: Style rules for main content*/
+    #info ul {
+        margin-left: 5%;
+    }
+
+    /*Style rules for Grid Class Selector*/
+    .grid {
+        grid-template-columns: 3;
+        gap: 30px;
+    }
+
+    aside {
+        grid-column: 1 / span 3;
+        font-size: 2em;
+    }
+
+    .video {
+        display: flexbox;
+        align-items: center;
+        border: 4px solid lightblue;
+        box-shadow: 6px 6px 10px darkblue;
+        max-width: auto;
+        margin: 2% auto;
+    }
+
+    .youtube {
+        align-self: center;
+        align-self: center;
+        column-span: 2;
+    }
+
+    .table-pictures{
+        display: table;
+        vertical-align: center;
+    }
+    
+    #youtube{
+        grid-column: span 3;
+    }
+}
+
+/*Media Query for Large Desktop Viewports*/
+@media screen and (min-width: 1921px),
+print {
+    body {
+        background: linear-gradient(lightblue, darkblue);
+        background-repeat: no-repeat;
+    }
+
+    #wrapper {
+        width: 1920px;
+        margin: 0 auto 0 auto;
+    }
+
+    main {
+        background-color: deepskyblue;
+    }
+
+    /*Styel ruls for grid class selector*/
+    .grid {
+        grid-template-columns: 4;
+    }
+
+    aside {
+        grid-column: 1 / span 4;
+        font-size: 3em;
+    }
+
+    .video {
+        display: flexbox;
+        align-items: center;
+        border: 4px solid lightblue;
+        box-shadow: 6px 6px 10px darkblue;
+        max-width: auto;
+        margin: 2% auto;
+    }
+
+    .youtube {
+        align-self: center;
+        align-self: center;
+        column-span: 2;
+    }
+    
+    #youtube{
+        grid-column: span 2;
+    }
+
+    .table-pictures{
+        display: table;
+        vertical-align: center;
+    }
+}
+
+/*Media Query for Print*/
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
