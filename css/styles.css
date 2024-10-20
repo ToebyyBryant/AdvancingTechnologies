@@ -389,7 +389,7 @@ print {
 print {
     body {
         background: linear-gradient(lightblue, darkblue);
-        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 
     #wrapper {
